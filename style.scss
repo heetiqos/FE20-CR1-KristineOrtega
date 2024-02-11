@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Great Vibes', cursive;
+
+    h1{
+        margin-left: 3rem;
+        font-size: 30px;
+    }
+    
+    a{
+        display: inline-block;
+        padding: .9rem;
+        text-decoration: none;
+        color: black;
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+
+    .icon{
+        margin-right: 2rem;
+    }
+}
+
+.hero{
+
+    border-style: solid;
+    border-width: 1px 0px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+        height: 2rem;
+        
+        a{
+            text-decoration: none;
+            color: black;
+          }
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .7rem;
+    margin: 2rem 10%;
+}
+
+
+.tile{
+    transition: scale 250ms ease;
+    h3{
+        visibility: hidden;
+        color: whitesmoke;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: hsla(0 0 0 / .5);
+        width: 100%;
+        padding: 1.2rem;
+        text-align: center;
+    }
+    &:hover{
+        scale: .9;
+        h3{
+            visibility: visible;
+        }
+}
+}
+
+$imgheight: 300px;
+
+.sushi{
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/06/16/46/sushi-1958247_1280.jpg');
+    height: $imgheight;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.ramen{
+    background-image: url('https://cdn.pixabay.com/photo/2022/05/10/18/50/ramen-7187809_1280.jpg');
+    height: $imgheight;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.dumplings{
+    background-image: url('https://cdn.pixabay.com/photo/2020/09/09/12/47/meal-5557530_1280.jpg');
+    height: $imgheight;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.dessert{
+    background-image: url('https://cdn.pixabay.com/photo/2015/11/23/06/29/taiwan-1057813_1280.jpg');
+    height: $imgheight;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.breakfast{
+    background-image: url('https://cdn.pixabay.com/photo/2015/02/10/16/18/fried-rice-631188_1280.jpg');
+    height: $imgheight;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.lunch{
+    background-image: url('https://images.unsplash.com/photo-1515669097368-22e68427d265?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlcml5YWtpfGVufDB8fDB8fHww');
+    height: $imgheight;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.noodles{
+    background-image: url('https://cdn.pixabay.com/photo/2023/10/19/11/14/noodles-8326227_1280.jpg');
+    height: $imgheight;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bubbletea{
+    background-image:url('https://images.unsplash.com/photo-1525803377221-4f6ccdaa5133?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnViYmxlJTIwdGVhfGVufDB8fDB8fHww');
+    height: $imgheight;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.springrolls{
+    background-image: url('https://cdn.pixabay.com/photo/2023/07/18/19/19/ai-generated-8135468_1280.jpg');
+    height: $imgheight;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+footer{
+
+    background-color: black;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+    .footerLinks{
+    ul{
+        color: white;
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+        height: 1.5rem;
+        
+        a{
+            text-decoration: none;
+            color: white;
+          }
+    }
+}
+
+    .footericon{
+        display: flex;
+        width: 30%;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+
+    .fa {
+        background: white;
+        color: black;
+        padding: .1rem;
+        text-align: center;
+        text-decoration: none;
+
+        .fa-facebook {   
+            border-radius: 50%;
+            }
+        
+        .fa-github {   
+            border-radius: 50%;
+            }
+    }
+    }
+
+    p{
+        text-align: center;
+        color: white;
+        padding-bottom: .5rem;
+    }
+}
+
+//Styling for recipe-of-the-month.html
+//Grid has to be defined before media queries!
+.recipe-container{
+    margin: 20px 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .7rem;
+}
+
+.title
+{
+    font-size: 50px;
+    text-align: center;
+    padding: .5rem;
+}
+
+.adobo-img{
+    width: 100%;
+    padding-right: 3rem;
+}
+
+
+//Media queries for index.html and recipe-of-the-month.html
+@media(width <= 768px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        margin: 2rem 10%;
+    }
+    .recipe-container{
+        grid-template-columns: 1fr;
+        margin: 2rem 10%;
+    }
+}
+
+@media(width <= 480px){
+    .grid{
+        grid-template-columns: 1fr;
+        margin: 2rem 10%;
+    }
+
+}
+//END
+
